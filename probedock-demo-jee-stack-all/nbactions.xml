@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action>
+		<actionName>CUSTOM-API Tests</actionName>
+		<displayName>API Tests</displayName>
+		<goals>
+			<goal>clean</goal>
+			<goal>install</goal>
+		</goals>
+		<activatedProfiles>
+			<activatedProfile>api</activatedProfile>
+		</activatedProfiles>
+	</action>
+	<action>
+		<actionName>CUSTOM-Integration Tests</actionName>
+		<displayName>Integration Tests</displayName>
+		<goals>
+			<goal>clean</goal>
+			<goal>install</goal>
+		</goals>
+		<activatedProfiles>
+			<activatedProfile>integration</activatedProfile>
+		</activatedProfiles>
+	</action>
+	<action>
+		<actionName>CUSTOM-All</actionName>
+		<displayName>All Tests</displayName>
+		<goals>
+			<goal>clean</goal>
+			<goal>install</goal>
+		</goals>
+		<activatedProfiles>
+			<activatedProfile>all</activatedProfile>
+		</activatedProfiles>
+	</action>
+</actions>
