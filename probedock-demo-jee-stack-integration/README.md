@@ -191,4 +191,4 @@
   }
   ```
 
-6. Then you have added the `probedock.yml` file with the modification for filtering the category by `Maven`.
+6. Then you have added the `probedock.yml` file with the modification for the category.

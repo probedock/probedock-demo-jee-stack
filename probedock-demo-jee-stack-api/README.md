@@ -110,13 +110,27 @@
   			<version>2.4</version>
   			<scope>test</scope>
   		</dependency>
+      <dependency>
+  			<groupId>org.apache.derby</groupId>
+  			<artifactId>derbyclient</artifactId>
+  			<version>10.12.1.1</version>
+  			<scope>test</scope>
+  		</dependency>
 
       <!-- The custom API test framework -->
       <dependency>
-  			<groupId>com.lotaris.api</groupId>
+  			<groupId>io.probedock.api</groupId>
   			<artifactId>java-api-test</artifactId>
-  			<version>1.5.0</version>
+  			<version>1.0.0</version>
         <scope>test</scope>
+  		</dependency>
+
+      <!-- The custom data layer framework -->
+      <dependency>
+  			<groupId>io.probedock.test</groupId>
+  			<artifactId>junitee-data-utils</artifactId>
+  			<version>1.0.0</version>
+  			<scope>test</scope>
   		</dependency>
 
       <!-- Data utilities to manage the persistence in the API tests -->
@@ -230,7 +244,7 @@
 	}
   ```
 
-6. Then you have added the `probedock.yml` file with the modification for filtering the category by `Maven`.
+6. Then you have added the `probedock.yml` file with the modification the category.
 
 7. We also did some setup for the `junitee-data-utils` framework. We added a specific `persistence.xml` in `test/resources/META-INF` to setup `Derby` connection for the tests in client mode.
 
